@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/BMRMf/Downloads/index_1.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Dasarathan International School | Inspire. Explore. Excel.</title>
+<meta name="description" content="Dr. Dasarathan International School, Coimbatore — nurturing well-educated, disciplined citizens through holistic, research-based education. Admissions open 2025–2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D2B45;
+    --navy-light: #163B5E;
+    --gold: #C4972A;
+    --gold-light: #DEB84E;
+    --gold-pale: #F5EDD4;
+    --cream: #F9F5EE;
+    --cream-dark: #EDE5D4;
+    --green: #2A5C40;
+    --green-light: #3A7A57;
+    --text-dark: #1A1A1A;
+    --text-mid: #4A4A4A;
+    --text-light: #767676;
+    --white: #FFFFFF;
+    --shadow-sm: 0 2px 12px rgba(13,43,69,0.08);
+    --shadow-md: 0 8px 32px rgba(13,43,69,0.12);
+    --shadow-lg: 0 20px 60px rgba(13,43,69,0.18);
+    --transition: all 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── TOPBAR ─────────────────────────────────────── */
+  .topbar {
+    background: var(--navy);
+    color: rgba(255,255,255,0.78);
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
+    padding: 7px 0;
+  }
+  .topbar-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 2rem;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  }
+  .topbar-contact { display: flex; gap: 1.6rem; align-items: center; flex-wrap: wrap; }
+  .topbar-contact a { color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; }
+  .topbar-contact a:hover { color: var(--gold-light); }
+  .topbar-contact svg { width: 13px; height: 13px; flex-shrink: 0; }
+  .topbar-social { display: flex; gap: 0.75rem; }
+  .topbar-social a {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; font-size: 11px; transition: var(--transition);
+  }
+  .topbar-social a:hover { background: var(--gold); color: var(--white); }
+  .topbar-social svg { width: 13px; height: 13px; }
+
+  /* ── HEADER ─────────────────────────────────────── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--white);
+    border-bottom: 1px solid rgba(196,151,42,0.2);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+  }
+  header.scrolled { box-shadow: var(--shadow-md); }
+  .header-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 2rem;
+    display: flex; align-items: center; gap: 2rem;
+  }
+  .logo-block {
+    display: flex; align-items: center; gap: 1rem;
+    text-decoration: none; padding: 0.85rem 0; flex-shrink: 0;
+  }
+  .logo-emblem {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: var(--navy); display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    border: 2px solid var(--gold); flex-shrink: 0;
+  }
+  .logo-emblem span { color: var(--gold); font-family: 'Cinzel', serif; font-size: 14px; font-weight: 600; line-height: 1.1; }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-text-main {
+    font-family: 'Cinzel', serif; font-size: 15px; font-weight: 600;
+    color: var(--navy); letter-spacing: 0.04em; line-height: 1.2;
+  }
+  .logo-text-sub {
+    font-family: 'Lato', sans-serif; font-size: 10px; font-weight: 700;
+    color: var(--gold); letter-spacing: 0.18em; text-transform: uppercase; margin-top: 2px;
+  }
+
+  nav { display: flex; align-items: center; gap: 0; margin-left: auto; }
+  .nav-item {
+    position: relative; display: flex; align-items: center;
+  }
+  .nav-item > a {
+    font-family: 'Lato', sans-serif; font-size: 13.5px; font-weight: 700;
+    color: var(--navy); text-decoration: none; letter-spacing: 0.05em;
+    text-transform: uppercase; padding: 1.5rem 1rem;
+    display: flex; align-items: center; gap: 4px;
+    transition: var(--transition);
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+  .nav-item > a:hover, .nav-item:hover > a { color: var(--gold); border-bottom-color: var(--gold); }
+  .nav-item > a svg { width: 10px; height: 10px; transition: transform 0.2s; }
+  .nav-item:hover > a svg { transform: rotate(180deg); }
+  .dropdown {
+    position: absolute; top: 100%; left: 0;
+    background: var(--white); border: 1px solid rgba(196,151,42,0.15);
+    border-top: 3px solid var(--gold); box-shadow: var(--shadow-lg);
+    min-width: 220px; opacity: 0; visibility: hidden; transform: translateY(8px);
+    transition: var(--transition); z-index: 200;
+  }
+  .nav-item:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+  .dropdown a {
+    display: block; padding: 0.65rem 1.25rem;
+    font-size: 13px; color: var(--text-mid); text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition);
+  }
+  .dropdown a:hover { background: var(--gold-pale); color: var(--gold); padding-left: 1.6rem; }
+  .btn-inquire {
+    margin-left: 1.5rem; padding: 0.6rem 1.4rem;
+    background: var(--gold); color: var(--white);
+    font-family: 'Lato', sans-serif; font-size: 12.5px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; border: 2px solid var(--gold);
+    transition: var(--transition); white-space: nowrap; flex-shrink: 0;
+  }
+  .btn-inquire:hover { background: transparent; color: var(--gold); }
+
+  /* Mobile nav toggle */
+  .menu-toggle {
+    display: none; flex-direction: column; gap: 5px; cursor: pointer;
+    margin-left: auto; padding: 4px; border: none; background: none;
+  }
+  .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--navy); transition: var(--transition); }
+
+  /* ── HERO ───────────────────────────────────────── */
+  .hero {
+    position: relative; height: 100vh; min-height: 600px; max-height: 900px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, #0D2B45 0%, #163B5E 35%, #1A4A70 60%, #0D2B45 100%);
+  }
+  .hero-pattern {
+    position: absolute; inset: 0; opacity: 0.06;
+    background-image: repeating-linear-gradient(
+      45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 50%
+    );
+    background-size: 20px 20px;
+  }
+  .hero-overlay {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(196,151,42,0.08) 0%, transparent 70%);
+  }
+  .hero-content {
+    position: relative; z-index: 2; text-align: center;
+    max-width: 860px; padding: 0 2rem;
+  }
+  .hero-eyebrow {
+    font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold-light);
+    margin-bottom: 1.25rem; opacity: 0; animation: fadeUp 0.7s 0.3s forwards;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 600; color: var(--white); line-height: 1.05;
+    margin-bottom: 1rem; opacity: 0; animation: fadeUp 0.7s 0.5s forwards;
+  }
+  .hero-title em { color: var(--gold-light); font-style: italic; }
+  .hero-tagline {
+    font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: rgba(255,255,255,0.72); font-weight: 400; font-style: italic;
+    letter-spacing: 0.04em; margin-bottom: 2.5rem;
+    opacity: 0; animation: fadeUp 0.7s 0.7s forwards;
+  }
+  .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.7s 0.9s forwards; }
+  .btn-primary {
+    padding: 0.85rem 2.2rem; background: var(--gold); color: var(--white);
+    font-family: 'Lato', sans-serif; font-size: 13px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+    border: 2px solid var(--gold); transition: var(--transition);
+  }
+  .btn-primary:hover { background: transparent; color: var(--gold-light); border-color: var(--gold-light); }
+  .btn-outline-white {
+    padding: 0.85rem 2.2rem; background: transparent; color: var(--white);
+    font-family: 'Lato', sans-serif; font-size: 13px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.4); transition: var(--transition);
+  }
+  .btn-outline-white:hover { background: rgba(255,255,255,0.12); border-color: var(--white); }
+  .hero-scroll {
+    position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    opacity: 0; animation: fadeIn 1s 1.4s forwards; z-index: 2;
+  }
+  .hero-scroll span { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+  .scroll-line { width: 1px; height: 36px; background: var(--gold); animation: scrollPulse 1.8s infinite; }
+
+  /* ── STATS BAR ──────────────────────────────────── */
+  .stats-bar { background: var(--navy); padding: 0; }
+  .stats-bar-inner {
+    max-width: 1280px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border-left: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item {
+    padding: 2rem 1.5rem; text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+  }
+  .stat-item::after {
+    content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 0; height: 2px; background: var(--gold); transition: width 0.5s;
+  }
+  .stat-item:hover::after { width: 60%; }
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700;
+    color: var(--gold-light); line-height: 1; margin-bottom: 0.35rem;
+  }
+  .stat-label {
+    font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5);
+  }
+
+  /* ── SECTIONS SHARED ────────────────────────────── */
+  section { padding: 5rem 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+  .section-label {
+    font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600; color: var(--navy); line-height: 1.15;
+    margin-bottom: 1.25rem;
+  }
+  .section-title em { color: var(--gold); font-style: italic; }
+  .section-lead {
+    font-size: 16px; line-height: 1.8; color: var(--text-mid);
+    max-width: 620px;
+  }
+  .text-center { text-align: center; }
+  .text-center .section-lead { margin: 0 auto; }
+  .gold-rule { width: 48px; height: 2px; background: var(--gold); margin: 1.5rem 0; }
+  .gold-rule.centered { margin: 1.5rem auto; }
+
+  /* ── WELCOME / ABOUT ────────────────────────────── */
+  .about-section { background: var(--cream); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+  }
+  .about-image-block { position: relative; }
+  .about-image-main {
+    width: 100%; aspect-ratio: 4/5; object-fit: cover;
+    background: linear-gradient(135deg, #2A5C40 0%, #0D2B45 100%);
+    position: relative; overflow: hidden;
+  }
+  .about-image-placeholder {
+    width: 100%; aspect-ratio: 4/5;
+    background: linear-gradient(160deg, var(--navy) 0%, var(--green) 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .about-image-placeholder::before {
+    content: ''; position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(255,255,255,0.03) 50px),
+                      repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(255,255,255,0.03) 50px);
+  }
+  .about-image-placeholder .school-badge {
+    width: 120px; height: 120px; border-radius: 50%;
+    border: 3px solid rgba(196,151,42,0.6); background: rgba(255,255,255,0.05);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    z-index: 1;
+  }
+  .about-image-placeholder .school-badge span { font-family: 'Cinzel', serif; color: var(--gold-light); font-size: 22px; font-weight: 600; }
+  .about-image-placeholder .school-badge small { font-family: 'Lato', sans-serif; color: rgba(255,255,255,0.55); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 4px; }
+  .about-accent-card {
+    position: absolute; bottom: -1.5rem; right: -1.5rem;
+    background: var(--gold); padding: 1.5rem 2rem; text-align: center;
+    box-shadow: var(--shadow-md);
+  }
+  .about-accent-card .accent-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700; color: var(--white); line-height: 1; }
+  .about-accent-card .accent-text { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.8); margin-top: 4px; }
+  .about-pillars { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2rem; }
+  .pillar {
+    display: flex; gap: 1rem; align-items: flex-start;
+    padding: 1.25rem; background: var(--white);
+    border-left: 3px solid var(--gold); box-shadow: var(--shadow-sm);
+  }
+  .pillar-icon { font-size: 1.6rem; flex-shrink: 0; line-height: 1; }
+  .pillar-title { font-family: 'Lato', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--navy); margin-bottom: 0.35rem; }
+  .pillar-text { font-size: 14px; color: var(--text-mid); line-height: 1.6; }
+
+  /* ── ACADEMICS ──────────────────────────────────── */
+  .academics-section { background: var(--white); }
+  .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3rem; }
+  .program-card {
+    position: relative; overflow: hidden; cursor: pointer;
+    transition: var(--transition);
+  }
+  .program-card-bg {
+    height: 420px; display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 2.5rem; position: relative;
+    background: var(--navy-light);
+  }
+  .program-card:nth-child(1) .program-card-bg { background: linear-gradient(160deg, #0D2B45 0%, #163B5E 100%); }
+  .program-card:nth-child(2) .program-card-bg { background: linear-gradient(160deg, #2A5C40 0%, #1A3D2B 100%); }
+  .program-card:nth-child(3) .program-card-bg { background: linear-gradient(160deg, #5C2A2A 0%, #3D1A1A 100%); }
+  .program-card-pattern {
+    position: absolute; inset: 0; opacity: 0.05;
+    background-image: repeating-linear-gradient(45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 12px);
+    background-size: 12px 12px;
+  }
+  .program-grade {
+    font-family: 'Lato', sans-serif; font-size: 10px; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light);
+    margin-bottom: 0.5rem; position: relative; z-index: 1;
+  }
+  .program-name {
+    font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600;
+    color: var(--white); line-height: 1.15; position: relative; z-index: 1;
+    margin-bottom: 0.75rem;
+  }
+  .program-desc {
+    font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.7;
+    position: relative; z-index: 1; max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease; opacity: 0;
+  }
+  .program-card:hover .program-desc { max-height: 120px; opacity: 1; }
+  .program-link {
+    position: relative; z-index: 1; margin-top: 1.5rem; display: inline-flex;
+    align-items: center; gap: 6px; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light);
+    text-decoration: none;
+  }
+  .program-link svg { width: 14px; height: 14px; transition: transform 0.2s; }
+  .program-card:hover .program-link svg { transform: translateX(4px); }
+  .program-card:hover .program-card-bg { transform: scale(1.02); }
+
+  /* ── WHY CHOOSE ─────────────────────────────────── */
+  .why-section { background: var(--navy); }
+  .why-section .section-title { color: var(--white); }
+  .why-section .section-lead { color: rgba(255,255,255,0.6); }
+  .why-section .section-label { color: var(--gold-light); }
+  .why-section .gold-rule { background: var(--gold); }
+  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 3.5rem; background: rgba(255,255,255,0.06); }
+  .why-item {
+    padding: 2.5rem 2rem; background: var(--navy); text-align: center;
+    transition: var(--transition); position: relative; overflow: hidden;
+  }
+  .why-item::before {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 0;
+    background: rgba(196,151,42,0.06); transition: height 0.4s;
+  }
+  .why-item:hover::before { height: 100%; }
+  .why-icon {
+    font-size: 2.5rem; margin-bottom: 1.25rem; line-height: 1;
+    display: block; position: relative; z-index: 1;
+  }
+  .why-title {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600;
+    color: var(--white); margin-bottom: 0.75rem; position: relative; z-index: 1;
+  }
+  .why-text { font-size: 13.5px; color: rgba(255,255,255,0.55); line-height: 1.7; position: relative; z-index: 1; }
+  .why-divider { width: 32px; height: 1px; background: var(--gold); margin: 0.85rem auto; position: relative; z-index: 1; }
+
+  /* ── FACILITIES ─────────────────────────────────── */
+  .facilities-section { background: var(--cream); }
+  .facilities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .facility-card {
+    background: var(--white); border: 1px solid rgba(196,151,42,0.12);
+    padding: 2rem; transition: var(--transition);
+    position: relative; overflow: hidden;
+  }
+  .facility-card::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 0;
+    background: var(--gold); transition: width 0.3s;
+  }
+  .facility-card:hover::before { width: 3px; }
+  .facility-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .facility-icon-wrap {
+    width: 52px; height: 52px; background: var(--gold-pale); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; margin-bottom: 1.25rem;
+  }
+  .facility-name { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
+  .facility-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; }
+
+  /* ── ANNOUNCEMENTS + EVENTS ─────────────────────── */
+  .updates-section { background: var(--white); }
+  .updates-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; }
+  .updates-col-title {
+    font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); border-bottom: 1px solid var(--gold-pale);
+    padding-bottom: 0.75rem; margin-bottom: 1.5rem;
+  }
+  .announcement-item {
+    display: flex; gap: 1rem; align-items: flex-start;
+    padding: 1rem 0; border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .announcement-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 6px; }
+  .announcement-text { font-size: 14px; color: var(--text-mid); line-height: 1.6; }
+  .announcement-text strong { display: block; font-weight: 700; color: var(--text-dark); margin-bottom: 2px; }
+  .announcement-badge {
+    display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 2px 8px; border-radius: 2px;
+    background: var(--gold-pale); color: var(--gold); margin-top: 4px;
+  }
+  .event-card {
+    display: flex; gap: 1.25rem; align-items: flex-start;
+    padding: 1rem 0; border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .event-date-box {
+    width: 52px; flex-shrink: 0; background: var(--navy); text-align: center; padding: 0.5rem 0.25rem;
+  }
+  .event-date-box .month { font-size: 9px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); }
+  .event-date-box .day { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 700; color: var(--white); line-height: 1; }
+  .event-info {}
+  .event-title { font-size: 14px; font-weight: 700; color: var(--text-dark); margin-bottom: 3px; }
+  .event-meta { font-size: 12px; color: var(--text-light); }
+  .view-all-link {
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 1.25rem;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px; transition: var(--transition);
+  }
+  .view-all-link:hover { color: var(--gold); }
+  .view-all-link svg { width: 12px; height: 12px; }
+
+  /* ── ENROLLMENT CTA ─────────────────────────────── */
+  .enrollment-section {
+    background: linear-gradient(135deg, var(--gold) 0%, #A07920 100%);
+    padding: 4.5rem 0; position: relative; overflow: hidden;
+  }
+  .enrollment-section::before {
+    content: ''; position: absolute; inset: 0; opacity: 0.06;
+    background-image: repeating-linear-gradient(
+      -45deg, var(--white) 0, var(--white) 1px, transparent 0, transparent 20px
+    ); background-size: 20px 20px;
+  }
+  .enrollment-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap;
+    position: relative; z-index: 1;
+  }
+  .enrollment-text .enrollment-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase;
+    color: rgba(255,255,255,0.8); margin-bottom: 0.75rem;
+  }
+  .enrollment-text h2 {
+    font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 600; color: var(--white); line-height: 1.2; margin-bottom: 0.75rem;
+  }
+  .enrollment-text p { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 480px; line-height: 1.65; }
+  .enrollment-actions { display: flex; flex-direction: column; gap: 0.75rem; flex-shrink: 0; }
+  .btn-white {
+    padding: 0.85rem 2.2rem; background: var(--white); color: var(--gold);
+    font-family: 'Lato', sans-serif; font-size: 13px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+    border: 2px solid var(--white); transition: var(--transition); text-align: center;
+  }
+  .btn-white:hover { background: transparent; color: var(--white); }
+  .btn-outline-w {
+    padding: 0.85rem 2.2rem; background: transparent; color: var(--white);
+    font-family: 'Lato', sans-serif; font-size: 13px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.5); transition: var(--transition); text-align: center;
+  }
+  .btn-outline-w:hover { border-color: var(--white); background: rgba(255,255,255,0.1); }
+  .enrollment-steps {
+    display: flex; gap: 0; flex-shrink: 0;
+    background: rgba(255,255,255,0.12); padding: 1.5rem 2rem; gap: 2rem;
+  }
+  .enroll-step { text-align: center; }
+  .enroll-step-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 700; color: var(--white); line-height: 1; }
+  .enroll-step-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-top: 3px; }
+  .enroll-step-divider { width: 1px; background: rgba(255,255,255,0.25); }
+
+  /* ── TESTIMONIALS ───────────────────────────────── */
+  .testimonials-section { background: var(--cream); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+  .testimonial-card {
+    background: var(--white); padding: 2rem;
+    border: 1px solid rgba(196,151,42,0.12);
+    box-shadow: var(--shadow-sm); transition: var(--transition);
+    position: relative;
+  }
+  .testimonial-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+  .testimonial-card::before {
+    content: '"'; position: absolute; top: 1rem; right: 1.5rem;
+    font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 700;
+    color: var(--gold-pale); line-height: 1;
+  }
+  .testimonial-text { font-size: 14.5px; line-height: 1.8; color: var(--text-mid); margin-bottom: 1.5rem; font-style: italic; }
+  .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+  .author-avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: var(--navy); display: flex; align-items: center; justify-content: center;
+    font-family: 'Cinzel', serif; font-size: 14px; color: var(--gold-light); flex-shrink: 0;
+  }
+  .author-name { font-size: 14px; font-weight: 700; color: var(--text-dark); }
+  .author-role { font-size: 12px; color: var(--text-light); margin-top: 1px; }
+  .star-row { display: flex; gap: 2px; margin-bottom: 0.75rem; }
+  .star { color: var(--gold); font-size: 14px; }
+
+  /* ── ADMISSIONS PROCESS ─────────────────────────── */
+  .process-section { background: var(--white); }
+  .process-steps { display: flex; gap: 0; margin-top: 3rem; position: relative; }
+  .process-steps::before {
+    content: ''; position: absolute; top: 28px; left: 60px; right: 60px; height: 1px;
+    background: linear-gradient(to right, var(--gold), rgba(196,151,42,0.2));
+    z-index: 0;
+  }
+  .process-step {
+    flex: 1; text-align: center; position: relative; z-index: 1; padding: 0 1rem;
+  }
+  .step-num-wrap {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--gold); display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.25rem; box-shadow: 0 4px 16px rgba(196,151,42,0.35);
+  }
+  .step-num { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 700; color: var(--white); }
+  .step-title { font-size: 13px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+  .step-desc { font-size: 12.5px; color: var(--text-light); line-height: 1.6; }
+
+  /* ── CONTACT STRIP ──────────────────────────────── */
+  .contact-strip { background: var(--navy-light); padding: 3rem 0; }
+  .contact-strip-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 2rem;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+  }
+  .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
+  .contact-icon-box {
+    width: 44px; height: 44px; background: rgba(196,151,42,0.15); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .contact-icon-box svg { width: 18px; height: 18px; color: var(--gold-light); }
+  .contact-info-label { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 3px; }
+  .contact-info-value { font-size: 14px; color: rgba(255,255,255,0.9); line-height: 1.5; }
+  .contact-info-value a { color: inherit; text-decoration: none; }
+  .contact-info-value a:hover { color: var(--gold-light); }
+
+  /* ── FOOTER ─────────────────────────────────────── */
+  footer { background: var(--navy); padding: 4rem 0 0; }
+  .footer-grid {
+    max-width: 1280px; margin: 0 auto; padding: 0 2rem;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 3rem;
+  }
+  .footer-brand .logo-block { padding: 0; margin-bottom: 1.25rem; }
+  .footer-about { font-size: 13.5px; color: rgba(255,255,255,0.5); line-height: 1.75; margin-bottom: 1.5rem; }
+  .footer-social { display: flex; gap: 0.6rem; }
+  .footer-social a {
+    width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.6);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; transition: var(--transition);
+  }
+  .footer-social a:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+  .footer-social svg { width: 14px; height: 14px; }
+  .footer-col-title {
+    font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light);
+    margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
+  .footer-links li a {
+    font-size: 13.5px; color: rgba(255,255,255,0.5); text-decoration: none; transition: var(--transition);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .footer-links li a:hover { color: var(--gold-light); padding-left: 4px; }
+  .footer-links li a svg { width: 10px; height: 10px; flex-shrink: 0; }
+  .footer-cta-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(196,151,42,0.2); padding: 1.75rem; }
+  .footer-cta-text { font-size: 13.5px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 1.25rem; }
+  .footer-bottom {
+    margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 1.25rem 2rem;
+    max-width: 1280px; margin: 3rem auto 0; padding: 1.25rem 2rem;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+  }
+  .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.3); }
+  .footer-bottom-links { display: flex; gap: 1.25rem; }
+  .footer-bottom-links a { font-size: 12px; color: rgba(255,255,255,0.3); text-decoration: none; transition: var(--transition); }
+  .footer-bottom-links a:hover { color: var(--gold-light); }
+
+  /* ── ANIMATIONS ─────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes scrollPulse {
+    0%, 100% { transform: scaleY(1); opacity: 1; }
+    50% { transform: scaleY(0.5); opacity: 0.4; }
+  }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ── MOBILE ─────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .about-image-block { max-width: 480px; }
+    .programs-grid { grid-template-columns: 1fr; }
+    .program-card-bg { height: 300px; }
+    .program-desc { max-height: 80px; opacity: 1; }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+    .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .contact-strip-inner { grid-template-columns: 1fr; }
+    .process-steps { flex-direction: column; gap: 2rem; }
+    .process-steps::before { display: none; }
+  }
+  @media (max-width: 768px) {
+    nav { display: none; }
+    nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); box-shadow: var(--shadow-lg); padding: 1rem 0; z-index: 300; }
+    .nav-item > a { padding: 0.75rem 1.5rem; border-bottom: none; }
+    .dropdown { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; background: var(--cream); }
+    .btn-inquire { margin-left: 0; }
+    .menu-toggle { display: flex; }
+    .header-inner { flex-wrap: wrap; position: relative; }
+    .updates-grid { grid-template-columns: 1fr; }
+    .enrollment-inner { flex-direction: column; }
+    .enrollment-steps { width: 100%; justify-content: center; }
+    .why-grid { grid-template-columns: 1fr; }
+    .facilities-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .topbar-contact { font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── TOPBAR ───────────────────────────────────── -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-contact">
+      <a href="tel:+919489663338">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.72 6.72l1.91-1.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        +91 94896 63338
+      </a>
+      <a href="mailto:drdasarathanintschool@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        drdasarathanintschool@gmail.com
+      </a>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;width:13px;height:13px;vertical-align:-2px;margin-right:4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        Jangamanaicken Palayam, Coimbatore – 641017
+      </span>
+    </div>
+    <div class="topbar-social">
+      <a href="https://www.facebook.com/Dr.DasarathanInternationalSchool/" target="_blank" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+      </a>
+      <a href="https://www.youtube.com/@dr.dasarathaninternational9449" target="_blank" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon fill="#0D2B45" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+      </a>
+      <a href="https://www.instagram.com/drdasarathanintschool/" target="_blank" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── HEADER ────────────────────────────────────── -->
+<header id="site-header" class="">
+  <div class="header-inner">
+    <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#" class="logo-block">
+      <div class="logo-emblem"><span>DIS</span></div>
+      <div class="logo-text">
+        <span class="logo-text-main">Dr. Dasarathan International School</span>
+        <span class="logo-text-sub">Inspire · Explore · Excel</span>
+      </div>
+    </a>
+
+    <nav id="main-nav">
+      <div class="nav-item">
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#about">About Us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown">
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#about">About Us</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Vision &amp; Mission</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Management</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Principal's Message</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Testimonials</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#academics">Academics
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown">
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Primary School (LKG – V)</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Middle School (VI – VIII)</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Senior School (IX – XII)</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Circulars</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Examination Dates</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Holiday List</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#admissions">Admissions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown">
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Admissions Process</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Apply Online</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Fee Structure</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">FAQs</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#facilities">Facilities</a></div>
+      <div class="nav-item">
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#events">Co-Curricular
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown">
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Sports &amp; Athletics</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Arts &amp; Culture</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Events &amp; Celebrations</a>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">School Blog</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#contact">Contact</a></div>
+    </nav>
+
+    <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#admissions" class="btn-inquire">Admissions 2025–26</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── HERO ─────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Coimbatore's Premier International School</p>
+    <h1 class="hero-title">Where Every Child<br><em>Discovers Their Greatness</em></h1>
+    <p class="hero-tagline">Inspire &nbsp;·&nbsp; Explore &nbsp;·&nbsp; Excel</p>
+    <div class="hero-ctas">
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#admissions" class="btn-primary">Apply for 2025–26</a>
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#about" class="btn-outline-white">Explore Our School</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── STATS ─────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-item reveal visible">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Years of Excellence</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1 visible">
+      <div class="stat-number">1,800+</div>
+      <div class="stat-label">Students Enrolled</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2 visible">
+      <div class="stat-number">120+</div>
+      <div class="stat-label">Dedicated Faculty</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3 visible">
+      <div class="stat-number">25+</div>
+      <div class="stat-label">Co-Curricular Activities</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── ABOUT ─────────────────────────────────────── -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-block reveal visible">
+        <div class="about-image-placeholder">
+          <div class="school-badge">
+            <span>DIS</span>
+            <small>Est. 2009</small>
+          </div>
+        </div>
+        <div class="about-accent-card">
+          <div class="accent-num">A+</div>
+          <div class="accent-text">CBSE Affiliation</div>
+        </div>
+      </div>
+      <div class="about-content reveal reveal-delay-1 visible">
+        <p class="section-label">Welcome to Dr. DIS</p>
+        <h2 class="section-title">Nurturing <em>Minds,</em><br>Shaping <em>Futures</em></h2>
+        <div class="gold-rule"></div>
+        <p class="section-lead">
+          At Dr. Dasarathan International School, our credo is simple: <strong>Inspire. Explore. Excel.</strong> We nurture well-educated, disciplined citizens by providing rich, holistic education within beautiful, sweeping facilities — ensuring every student is equipped to tackle the challenges of tomorrow through the joy of learning today.
+        </p>
+        <p style="font-size:15px;color:var(--text-mid);line-height:1.8;margin-top:1rem;">
+          Our research-based curriculum emphasises a strong foundation in literacy, critical thinking, leadership, and boundless opportunities for creative expression. We believe every child carries within them an extraordinary potential — our role is to help them discover it.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">📚</div>
+            <div>
+              <div class="pillar-title">Research-Based Curriculum</div>
+              <div class="pillar-text">A rigorous CBSE programme enriched with critical thinking, project-based learning, and real-world application.</div>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🌱</div>
+            <div>
+              <div class="pillar-title">Holistic Development</div>
+              <div class="pillar-text">Academics balanced with arts, sports, leadership programmes, and community service for whole-child growth.</div>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🤝</div>
+            <div>
+              <div class="pillar-title">Safe &amp; Nurturing Environment</div>
+              <div class="pillar-text">A warm, inclusive campus where every student feels valued, respected, and empowered to thrive.</div>
+            </div>
+          </div>
+        </div>
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#about" class="btn-primary" style="display:inline-block;margin-top:2rem;">Discover Our Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ACADEMICS ──────────────────────────────────── -->
+<section class="academics-section" id="academics">
+  <div class="container">
+    <div class="text-center reveal visible">
+      <p class="section-label">Academic Programmes</p>
+      <h2 class="section-title">Education at Every <em>Stage of Growth</em></h2>
+      <div class="gold-rule centered"></div>
+      <p class="section-lead">From our youngest learners to our graduating class, each programme is designed to meet students exactly where they are — and take them further than they imagined.</p>
+    </div>
+    <div class="programs-grid reveal reveal-delay-1 visible">
+      <div class="program-card">
+        <div class="program-card-bg">
+          <div class="program-card-pattern"></div>
+          <p class="program-grade">LKG – Grade V</p>
+          <h3 class="program-name">Primary School</h3>
+          <p class="program-desc">Our foundational years build curiosity, love of learning, and core literacy through play-based, activity-rich learning environments designed to spark wonder.</p>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#academics" class="program-link">
+            Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="program-card-bg">
+          <div class="program-card-pattern"></div>
+          <p class="program-grade">Grades VI – VIII</p>
+          <h3 class="program-name">Middle School</h3>
+          <p class="program-desc">Students sharpen analytical thinking, deepen subject knowledge, and begin developing their unique voice as learners through project-based and collaborative study.</p>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#academics" class="program-link">
+            Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="program-card-bg">
+          <div class="program-card-pattern"></div>
+          <p class="program-grade">Grades IX – XII</p>
+          <h3 class="program-name">Senior School</h3>
+          <p class="program-desc">Rigorous CBSE preparation alongside leadership, career guidance, and opportunities for students to define and pursue their aspirations with confidence.</p>
+          <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#academics" class="program-link">
+            Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE ─────────────────────────────────── -->
+<section class="why-section">
+  <div class="container">
+    <div class="text-center reveal visible">
+      <p class="section-label">Why Dr. Dasarathan International School</p>
+      <h2 class="section-title">An Education Built on <em>Four Pillars</em></h2>
+      <div class="gold-rule centered"></div>
+      <p class="section-lead">Our distinctive approach to education is grounded in principles that have shaped outstanding students for over a decade.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal visible">
+        <span class="why-icon">🎓</span>
+        <div class="why-divider"></div>
+        <h3 class="why-title">Academic Excellence</h3>
+        <p class="why-text">A CBSE curriculum enriched with critical thinking, research skills, and a passion for lifelong learning — producing consistent top performers.</p>
+      </div>
+      <div class="why-item reveal reveal-delay-1 visible">
+        <span class="why-icon">🏆</span>
+        <div class="why-divider"></div>
+        <h3 class="why-title">Co-Curricular Depth</h3>
+        <p class="why-text">25+ activities across sports, visual arts, performing arts, and leadership — because we believe character is built beyond the classroom.</p>
+      </div>
+      <div class="why-item reveal reveal-delay-2 visible">
+        <span class="why-icon">🌍</span>
+        <div class="why-divider"></div>
+        <h3 class="why-title">Global Perspective</h3>
+        <p class="why-text">International exposure, digital literacy, and a curriculum designed to prepare students for universities and careers across the world.</p>
+      </div>
+      <div class="why-item reveal reveal-delay-3 visible">
+        <span class="why-icon">🛡️</span>
+        <div class="why-divider"></div>
+        <h3 class="why-title">Safe Campus</h3>
+        <p class="why-text">CCTV monitoring, trained staff, a dedicated counsellor, and a zero-tolerance anti-bullying policy ensure every student feels protected and valued.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FACILITIES ──────────────────────────────────── -->
+<section class="facilities-section" id="facilities">
+  <div class="container">
+    <div class="text-center reveal visible">
+      <p class="section-label">Our Campus &amp; Facilities</p>
+      <h2 class="section-title">Every Day, <em>Extraordinary</em> Care</h2>
+      <div class="gold-rule centered"></div>
+    </div>
+    <div class="facilities-grid">
+      <div class="facility-card reveal visible">
+        <div class="facility-icon-wrap">🏫</div>
+        <div class="facility-name">Modern Campus</div>
+        <div class="facility-desc">Spacious, well-ventilated classrooms equipped with smart boards, modern labs, and collaborative learning spaces set across a lush green campus.</div>
+      </div>
+      <div class="facility-card reveal reveal-delay-1 visible">
+        <div class="facility-icon-wrap">🚌</div>
+        <div class="facility-name">Safe School Transport</div>
+        <div class="facility-desc">GPS-tracked, air-conditioned buses with trained drivers and attendants covering major routes across Coimbatore for safe, punctual commuting.</div>
+      </div>
+      <div class="facility-card reveal reveal-delay-2 visible">
+        <div class="facility-icon-wrap">🔬</div>
+        <div class="facility-name">Science &amp; Tech Labs</div>
+        <div class="facility-desc">Fully equipped Physics, Chemistry, Biology, and Computer Science laboratories that make hands-on experiential learning the norm, not the exception.</div>
+      </div>
+      <div class="facility-card reveal">
+        <div class="facility-icon-wrap">📖</div>
+        <div class="facility-name">Enriched Library</div>
+        <div class="facility-desc">An extensive collection of books, periodicals, and digital resources cultivating a strong culture of reading, research, and independent inquiry.</div>
+      </div>
+      <div class="facility-card reveal reveal-delay-1">
+        <div class="facility-icon-wrap">⚽</div>
+        <div class="facility-name">Sports Facilities</div>
+        <div class="facility-desc">Dedicated play areas, courts, and fields for cricket, football, basketball, athletics, and more — coached by qualified physical education staff.</div>
+      </div>
+      <div class="facility-card reveal reveal-delay-2">
+        <div class="facility-icon-wrap">🍽️</div>
+        <div class="facility-name">Nutrition &amp; Dining</div>
+        <div class="facility-desc">A hygienic school canteen serving nutritious, balanced meals and snacks prepared under strict food safety standards to fuel young, growing minds.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── UPDATES ────────────────────────────────────── -->
+<section class="updates-section" id="events">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">School Updates</p>
+      <h2 class="section-title">Announcements &amp; <em>Recent Events</em></h2>
+      <div class="gold-rule centered"></div>
+    </div>
+    <div class="updates-grid">
+      <div>
+        <p class="updates-col-title">📢 &nbsp;School Announcements</p>
+        <div class="announcement-item reveal">
+          <div class="announcement-dot"></div>
+          <div class="announcement-text">
+            <strong>Admissions Open for 2025–2026</strong>
+            Applications for LKG through Grade XII are now being accepted. Limited seats available — apply early to secure your child's place.
+            <span class="announcement-badge">Open Now</span>
+          </div>
+        </div>
+        <div class="announcement-item reveal reveal-delay-1">
+          <div class="announcement-dot"></div>
+          <div class="announcement-text">
+            <strong>Class XII Board Results 2024–25</strong>
+            We are proud to announce outstanding results with 95% of students achieving distinction. Congratulations to the Class of 2025!
+            <span class="announcement-badge">Academic</span>
+          </div>
+        </div>
+        <div class="announcement-item reveal reveal-delay-2">
+          <div class="announcement-dot"></div>
+          <div class="announcement-text">
+            <strong>New STEM Laboratory Inauguration</strong>
+            Our state-of-the-art robotics and innovation lab will be inaugurated in September 2025, providing students access to cutting-edge technology.
+            <span class="announcement-badge">Campus</span>
+          </div>
+        </div>
+        <div class="announcement-item reveal reveal-delay-3">
+          <div class="announcement-dot"></div>
+          <div class="announcement-text">
+            <strong>Parent-Teacher Meeting – July 2025</strong>
+            PTM scheduled for 26th July, 2025. Parents are requested to book their appointment slots via the school portal.
+            <span class="announcement-badge">Event</span>
+          </div>
+        </div>
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#" class="view-all-link">
+          View All Announcements
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+      <div>
+        <p class="updates-col-title">🗓️ &nbsp;Recent Events</p>
+        <div class="event-card reveal">
+          <div class="event-date-box"><div class="month">Dec</div><div class="day">20</div></div>
+          <div class="event-info">
+            <div class="event-title">Christmas Celebrations 2024</div>
+            <div class="event-meta">Auditorium · All Students &amp; Parents Welcome</div>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-1">
+          <div class="event-date-box"><div class="month">Jun</div><div class="day">15</div></div>
+          <div class="event-info">
+            <div class="event-title">Summer Carnival &amp; Fun Fair</div>
+            <div class="event-meta">School Grounds · Grades I–VIII</div>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-2">
+          <div class="event-date-box"><div class="month">May</div><div class="day">15</div></div>
+          <div class="event-info">
+            <div class="event-title">Youth Skills Day Workshop</div>
+            <div class="event-meta">Innovation Lab · Grades VI–XII</div>
+          </div>
+        </div>
+        <div class="event-card reveal reveal-delay-3">
+          <div class="event-date-box"><div class="month">Apr</div><div class="day">14</div></div>
+          <div class="event-info">
+            <div class="event-title">Tamil New Year Cultural Programme</div>
+            <div class="event-meta">Main Stage · All Grades</div>
+          </div>
+        </div>
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#" class="view-all-link">
+          View All Events
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ADMISSIONS CTA ──────────────────────────────── -->
+<section class="enrollment-section" id="admissions">
+  <div class="enrollment-inner">
+    <div class="enrollment-text reveal">
+      <p class="enrollment-eyebrow">Admissions 2025 – 2026</p>
+      <h2>Begin Your Child's<br>Journey of Excellence</h2>
+      <p>Seats are filling fast for the 2025–2026 academic year. Our simple three-step process makes enrolment straightforward, so your child can join the Dr. DIS family without delay.</p>
+    </div>
+    <div class="enrollment-steps reveal reveal-delay-1">
+      <div class="enroll-step">
+        <div class="enroll-step-num">01</div>
+        <div class="enroll-step-label">Inquire</div>
+      </div>
+      <div class="enroll-step-divider"></div>
+      <div class="enroll-step">
+        <div class="enroll-step-num">02</div>
+        <div class="enroll-step-label">Visit</div>
+      </div>
+      <div class="enroll-step-divider"></div>
+      <div class="enroll-step">
+        <div class="enroll-step-num">03</div>
+        <div class="enroll-step-label">Enroll</div>
+      </div>
+    </div>
+    <div class="enrollment-actions reveal reveal-delay-2">
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#" class="btn-white">Apply Online Now</a>
+      <a href="tel:+919489663338" class="btn-outline-w">Schedule a Campus Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ADMISSIONS PROCESS ──────────────────────────── -->
+<section class="process-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">How to Enrol</p>
+      <h2 class="section-title">A Simple Path to <em>Joining Dr. DIS</em></h2>
+      <div class="gold-rule centered"></div>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num-wrap"><div class="step-num">1</div></div>
+        <div class="step-title">Submit Inquiry</div>
+        <div class="step-desc">Fill our short inquiry form online or call our admissions team to register your interest.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num-wrap"><div class="step-num">2</div></div>
+        <div class="step-title">Campus Tour</div>
+        <div class="step-desc">Visit our beautiful campus, meet our faculty, and experience the Dr. DIS environment firsthand.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num-wrap"><div class="step-num">3</div></div>
+        <div class="step-title">Assessment</div>
+        <div class="step-desc">A friendly age-appropriate assessment helps us understand your child's strengths and learning style.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num-wrap"><div class="step-num">4</div></div>
+        <div class="step-title">Offer Letter</div>
+        <div class="step-desc">Receive your official offer of admission and complete the documentation and fee payment.</div>
+      </div>
+      <div class="process-step reveal reveal-delay-4">
+        <div class="step-num-wrap"><div class="step-num">5</div></div>
+        <div class="step-title">Welcome Day</div>
+        <div class="step-desc">Your child joins the Dr. DIS family at our warm Welcome Orientation Programme.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;" class="reveal">
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#" class="btn-primary">Start Your Application</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ────────────────────────────────── -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <p class="section-label">Parent &amp; Student Voices</p>
+      <h2 class="section-title">What Our <em>Community Says</em></h2>
+      <div class="gold-rule centered"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="star-row">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">Dr. Dasarathan International School has transformed our daughter completely. The teachers go beyond academics — they build real character, confidence, and a genuine love for learning. We couldn't be prouder of her growth.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RK</div>
+          <div>
+            <div class="author-name">Rajesh Kumar</div>
+            <div class="author-role">Parent, Grade IX Student</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="star-row">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">The school's approach to combining rigorous academics with co-curricular activities is exactly what modern education should look like. My son has blossomed here in ways we never anticipated.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PS</div>
+          <div>
+            <div class="author-name">Priya Subramaniam</div>
+            <div class="author-role">Parent, Grade VI &amp; XI Students</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="star-row">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">I am so grateful for the encouragement from every teacher here. Dr. DIS gave me the confidence to pursue engineering and the skills to succeed. This school truly changed my life.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div>
+            <div class="author-name">Aakash Muthukumar</div>
+            <div class="author-role">Alumni, Class of 2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT STRIP ───────────────────────────────── -->
+<div class="contact-strip" id="contact">
+  <div class="contact-strip-inner">
+    <div class="contact-item reveal">
+      <div class="contact-icon-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      </div>
+      <div>
+        <div class="contact-info-label">Our Address</div>
+        <div class="contact-info-value">Jangamanaicken Palayam, Thoppampatti Pirivu,<br>Coimbatore – 641017, Tamil Nadu, India</div>
+      </div>
+    </div>
+    <div class="contact-item reveal reveal-delay-1">
+      <div class="contact-icon-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.72 6.72l1.91-1.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      </div>
+      <div>
+        <div class="contact-info-label">Phone &amp; Email</div>
+        <div class="contact-info-value">
+          <a href="tel:+919489663338">+91 94896 63338</a><br>
+          <a href="mailto:drdasarathanintschool@gmail.com">drdasarathanintschool@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-item reveal reveal-delay-2">
+      <div class="contact-icon-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      </div>
+      <div>
+        <div class="contact-info-label">School Hours</div>
+        <div class="contact-info-value">
+          Mon – Fri: 8:00 AM – 4:00 PM<br>
+          Admissions Office: 9:00 AM – 3:00 PM
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#" class="logo-block" style="display:inline-flex;">
+        <div class="logo-emblem"><span>DIS</span></div>
+        <div class="logo-text">
+          <span class="logo-text-main" style="color:rgba(255,255,255,0.9);">Dr. Dasarathan International School</span>
+          <span class="logo-text-sub">Inspire · Explore · Excel</span>
+        </div>
+      </a>
+      <p class="footer-about">Nurturing well-educated, disciplined citizens through rich, holistic education since 2009. CBSE affiliated, internationally-minded, locally rooted.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/Dr.DasarathanInternationalSchool/" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+        <a href="https://www.youtube.com/@dr.dasarathaninternational9449" target="_blank" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+        </a>
+        <a href="https://www.instagram.com/drdasarathanintschool/" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-col-title">Quick Links</p>
+      <ul class="footer-links">
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>About Us</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#academics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Academics</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#admissions"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Admissions 2025–26</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#facilities"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Facilities</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#events"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Events</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Contact Us</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Academics</p>
+      <ul class="footer-links">
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Primary School</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Middle School</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Senior School</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>School Circulars</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Examination Dates</a></li>
+        <li><a href="file:///C:/Users/BMRMf/Downloads/index_1.html#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>Holiday List</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Start Your Journey</p>
+      <div class="footer-cta-box">
+        <p class="footer-cta-text">Admissions for the 2025–2026 academic year are open. Join the Dr. DIS family and give your child the education they deserve.</p>
+        <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#admissions" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Apply Now →</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.06);">
+    <p>© 2025 Dr. Dasarathan International School, Coimbatore. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Privacy Policy</a>
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Terms of Use</a>
+      <a href="file:///C:/Users/BMRMf/Downloads/index_1.html#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky header
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Mobile menu
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('main-nav');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+
+
+</body></html>
